@@ -1,0 +1,11 @@
+(* Source files for the sml-proof library, in dependency order.
+
+   The vendored sml-logic sources are loaded FIRST so that `structure Logic`
+   (and the `Logic.prop` formula type) are in scope for proof.sig / proof.sml. *)
+
+$(SML_LIB)/basis/basis.mlb
+
+../sml-logic/sources.mlb
+
+proof.sig
+proof.sml
